@@ -1,0 +1,9 @@
+---
+
+- get_url:
+    url: "{{ aerospike_amc_url }}"
+    dest: "/tmp/{{ aerospike_amc_rpm }}"
+
+- yum: name=/tmp/{{ aerospike_amc_rpm }} state=present
+
+- service: name=amc state=started enabled=true

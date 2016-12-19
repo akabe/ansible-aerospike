@@ -1,0 +1,6 @@
+---
+
+aerospike_amc_version: 3.6.13
+aerospike_amc_os: el6
+aerospike_amc_rpm: "aerospike-amc-community-{{ aerospike_amc_version }}-{{ aerospike_amc_os }}.x86_64.rpm"
+aerospike_amc_url: "http://www.aerospike.com/download/amc/{{ aerospike_amc_version }}/artifact/{{ aerospike_amc_os }}"

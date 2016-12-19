@@ -1,0 +1,8 @@
+---
+
+- hosts: aerospike
+  gather_facts: true
+  become: true
+  roles:
+    - aerospike-server
+    - aerospike-amc

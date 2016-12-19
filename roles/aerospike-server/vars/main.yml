@@ -1,0 +1,6 @@
+---
+
+aerospike_server_version: 3.10.1.1
+aerospike_server_os: el6
+aerospike_server_pkg: "aerospike-server-community-{{ aerospike_server_version }}-{{ aerospike_server_os }}"
+aerospike_server_url: "http://www.aerospike.com/download/server/{{ aerospike_server_version }}/artifact/{{ aerospike_server_os }}"
