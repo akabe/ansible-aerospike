@@ -17,10 +17,11 @@
     chdir: "/tmp/{{ aerospike_server_pkg }}"
     creates: /etc/init.d/aerospike
 
+- name: Start Aerospike server
+  service: name=aerospike state=started enabled=true
+
 - name: Put aerospike.conf
   template:
     src=aerospike.conf
     dest=/etc/aerospike/aerospike.conf
-
-- name: Restart Aerospike server
-  service: name=aerospike state=restarted enabled=true
+  notify: Restart Aerospike

@@ -1,0 +1,4 @@
+---
+
+- name: Restart Aerospike
+  service: name=aerospike state=restarted
